@@ -1,6 +1,8 @@
 package domain;
 
 public class HomeAddress {
+
+    private Long id;
     private String country;
     private String city;
     private String street;
@@ -36,5 +38,12 @@ public class HomeAddress {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

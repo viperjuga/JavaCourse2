@@ -5,6 +5,7 @@ import enums.CarStatus;
 import java.util.Date;
 
 public class Rent {
+    private Long id;
     private User client;
     private Car car;
     private Date dateFrom;
@@ -85,5 +86,12 @@ public class Rent {
 
     public void setOperatorAcceptCar(User operatorAcceptCar) {
         this.operatorAcceptCar = operatorAcceptCar;
+    }
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

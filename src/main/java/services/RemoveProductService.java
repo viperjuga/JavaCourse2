@@ -1,7 +1,7 @@
 package services;
 
 import database.Database;
-import domain.Product;
+import domainProduct.Product;
 
 import java.util.Optional;
 

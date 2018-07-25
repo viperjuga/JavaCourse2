@@ -1,6 +1,6 @@
 package views;
 
-import domain.Product;
+import domainProduct.Product;
 import services.PrintProductService;
 
 import java.util.List;

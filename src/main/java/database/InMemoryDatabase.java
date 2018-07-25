@@ -1,6 +1,6 @@
 package database;
 
-import domain.Product;
+import domainProduct.Product;
 
 import java.util.ArrayList;
 import java.util.List;

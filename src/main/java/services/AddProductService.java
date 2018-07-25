@@ -1,7 +1,7 @@
 package services;
 
 import database.Database;
-import domain.Product;
+import domainProduct.Product;
 
 public class AddProductService {
 

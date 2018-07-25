@@ -1,12 +1,12 @@
 package enums;
 
-public enum Gearbox {
+public enum GearboxType {
     Manual (1),
     Automatic (2);
 
     private final int type;
 
-    Gearbox(int type) {
+    GearboxType(int type) {
         this.type = type;
     }
 }

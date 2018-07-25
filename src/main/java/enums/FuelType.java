@@ -1,6 +1,6 @@
 package enums;
 
-public enum Fuel {
+public enum FuelType {
     Diesel (1),
     Petrol (2),
     Electro(3),
@@ -8,7 +8,7 @@ public enum Fuel {
 
     private final int type;
 
-    Fuel(int type) {
+    FuelType(int type) {
         this.type = type;
     }
 }

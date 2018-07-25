@@ -4,7 +4,7 @@ import enums.CarStatus;
 
 import java.util.Date;
 
-public class CarRent {
+public class Rent {
     private User client;
     private Car car;
     private Date dateFrom;

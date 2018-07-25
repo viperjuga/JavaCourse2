@@ -1,5 +1,6 @@
 package domain;
 import enums.Fuel;
+import enums.Gearbox;
 
 
 public class Car {
@@ -13,6 +14,7 @@ public class Car {
     private int motorCapacity;
     private  String color;
     private Fuel fuelType;
+    private Gearbox gearbox;
 
 
     public String getMark (){
@@ -21,7 +23,6 @@ public class Car {
     public void setMark(String mark) {
         this.mark = mark;
     }
-
 
     public String getRegisterNumber() {
         return registerNumber;
@@ -61,5 +62,12 @@ public class Car {
 
     public void setFuelType(Fuel fuelType) {
         this.fuelType = fuelType;
+    }
+
+    public Gearbox getGearbox (){
+        return gearbox;
+    }
+    public void setGearbox(Gearbox gearBox) {
+        this.gearbox = gearbox;
     }
 }

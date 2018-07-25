@@ -1,9 +1,10 @@
 package enums;
 
 public enum Fuel {
-    Dieesel (1),
+    Diesel (1),
     Petrol (2),
-    Electro(3);
+    Electro(3),
+    Hybrid(4);
 
     private final int type;
 

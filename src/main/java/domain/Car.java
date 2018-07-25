@@ -1,6 +1,6 @@
 package domain;
-import enums.Fuel;
-import enums.Gearbox;
+import enums.FuelType;
+import enums.GearboxType;
 
 
 public class Car {
@@ -13,8 +13,8 @@ public class Car {
     //cm^3 1995...
     private int motorCapacity;
     private  String color;
-    private Fuel fuelType;
-    private Gearbox gearbox;
+    private FuelType fuelType;
+    private GearboxType gearbox;
 
 
     public String getMark (){
@@ -56,18 +56,18 @@ public class Car {
         this.color = color;
     }
 
-    public Fuel getFuelType() {
+    public FuelType getFuelType() {
         return fuelType;
     }
 
-    public void setFuelType(Fuel fuelType) {
+    public void setFuelType(FuelType fuelType) {
         this.fuelType = fuelType;
     }
 
-    public Gearbox getGearbox (){
+    public GearboxType getGearbox (){
         return gearbox;
     }
-    public void setGearbox(Gearbox gearBox) {
+    public void setGearbox(GearboxType gearBox) {
         this.gearbox = gearbox;
     }
 }

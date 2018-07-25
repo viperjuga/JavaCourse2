@@ -1,4 +1,4 @@
-package views;
+package viewsProduct;
 
 public class ExitView implements ConsoleView {
 

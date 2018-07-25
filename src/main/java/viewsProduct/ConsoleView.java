@@ -1,4 +1,4 @@
-package views;
+package viewsProduct;
 
 public interface ConsoleView {
 

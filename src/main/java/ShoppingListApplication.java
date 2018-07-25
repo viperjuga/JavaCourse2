@@ -1,9 +1,9 @@
 import database.Database;
-import database.InMemoryDatabase;
-import services.AddProductService;
-import services.PrintProductService;
-import services.RemoveProductService;
-import views.*;
+import database.InMemoryDatabaseProduct;
+import servicesProduct.AddProductService;
+import servicesProduct.PrintProductService;
+import servicesProduct.RemoveProductService;
+import viewsProduct.*;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class ShoppingListApplication {
         // 3. Print shopping list to console
         // 4. Exit
 
-        Database database = new InMemoryDatabase();
+        Database database = new InMemoryDatabaseProduct();
         AddProductService addProductService = new AddProductService(database);
         RemoveProductService removeProductService = new RemoveProductService(database);
         PrintProductService printProductService = new PrintProductService(database);

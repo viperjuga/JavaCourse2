@@ -1,7 +1,7 @@
-package views;
+package viewsProduct;
 
 import domainProduct.Product;
-import services.PrintProductService;
+import servicesProduct.PrintProductService;
 
 import java.util.List;
 

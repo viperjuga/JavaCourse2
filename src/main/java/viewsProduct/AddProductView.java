@@ -1,6 +1,6 @@
-package views;
+package viewsProduct;
 
-import services.AddProductService;
+import servicesProduct.AddProductService;
 
 import java.util.Scanner;
 

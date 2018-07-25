@@ -11,6 +11,12 @@ public class User {
     private HomeAddress adrress;
     private UserType type;
 
+    public Boolean getActive() {return active; }
+
+    public void setActive(Boolean active) {this.active = active;}
+
+    private Boolean active;
+
     public String getFirstName() {
         return firstName;
     }

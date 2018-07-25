@@ -1,6 +1,6 @@
-package views;
+package viewsProduct;
 
-import services.RemoveProductService;
+import servicesProduct.RemoveProductService;
 
 import java.util.Scanner;
 

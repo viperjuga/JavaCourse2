@@ -1,4 +1,4 @@
-package services;
+package servicesProduct;
 
 import database.Database;
 import domainProduct.Product;

@@ -1,4 +1,4 @@
-package services.carRentServices;
+package services.rent;
 
 public class PrintCarRentService {
 }

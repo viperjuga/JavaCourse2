@@ -1,4 +1,4 @@
-package services.userServices;
+package services.user;
 
 public class AddUserService {
 

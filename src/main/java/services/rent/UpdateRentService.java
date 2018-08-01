@@ -1,7 +1,10 @@
 package services.rent;
 
 import database.Database;
+import domain.Rent;
 import enums.CarStatus;
+
+import java.util.Optional;
 
 public class UpdateRentService {
     private Database database;

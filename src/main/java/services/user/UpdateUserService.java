@@ -1,13 +1,14 @@
 package services.user;
 
+import database.Database;
 import domain.User;
 
 import java.util.Optional;
 
 public class UpdateUserService {
-    private InMemoryDatabase database;
+    private Database database;
 
-    public UpdateUserService (InMemoryDatabase database){
+    public UpdateUserService (Database database){
         this.database = database;
     }
 

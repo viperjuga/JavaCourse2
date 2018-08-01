@@ -1,5 +1,6 @@
 package services.user;
 
+import database.Database;
 import domain.User;
 import enums.UserType;
 
@@ -7,13 +8,13 @@ import java.util.List;
 import java.util.Optional;
 
 public class PrintUserService {
-    private InMemoryDatabase database;
+    private Database database;
 
-    public PrintUserService (InMemoryDatabase database){
+    public PrintUserService (Database database){
         this.database = database;
     }
 
-    public List<User> GetUsrsByType(UserType type){
+    public List<User> GetUsersByType(UserType type){
        return database.getAllUsersByType(type);
     }
 

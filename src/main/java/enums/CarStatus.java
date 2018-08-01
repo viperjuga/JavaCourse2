@@ -11,4 +11,8 @@ public enum CarStatus {
     CarStatus(int type) {
         this.type = type;
     }
+
+    public int getValue() {
+        return type;
+    }
 }

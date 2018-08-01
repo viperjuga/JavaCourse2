@@ -16,7 +16,7 @@ public class Car {
     private int motorCapacity;
     private  String color;
     private FuelType fuelType;
-    private GearboxType gearbox;
+    private GearboxType gearboxType;
 
 
     public String getMark (){
@@ -66,11 +66,11 @@ public class Car {
         this.fuelType = fuelType;
     }
 
-    public GearboxType getGearbox (){
-        return gearbox;
+    public GearboxType getGearboxType (){
+        return gearboxType;
     }
-    public void setGearbox(GearboxType gearBox) {
-        this.gearbox = gearbox;
+    public void setGearboxType(GearboxType gearBox) {
+        this.gearboxType = gearboxType;
     }
     public Long getId() {
         return id;

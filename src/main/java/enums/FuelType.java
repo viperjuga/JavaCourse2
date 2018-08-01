@@ -11,4 +11,7 @@ public enum FuelType {
     FuelType(int type) {
         this.type = type;
     }
+    public int getValue() {
+        return type;
+    }
 }

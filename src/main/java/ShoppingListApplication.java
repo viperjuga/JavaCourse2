@@ -1,5 +1,4 @@
 import database.Database;
-import database.InMemoryDatabaseProduct;
 import servicesProduct.AddProductService;
 import servicesProduct.PrintProductService;
 import servicesProduct.RemoveProductService;

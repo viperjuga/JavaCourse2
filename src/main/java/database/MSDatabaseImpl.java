@@ -1,15 +1,41 @@
 package database;
 
 import domain.Car;
+import domain.Rent;
+import domain.User;
 import domainProduct.Product;
+import enums.CarStatus;
+import enums.UserType;
 
 import java.sql.*;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 public class MSDatabaseImpl extends JDBCRepository implements Database {
+
     @Override
-    public void addProduct(Car car) {
+    public void addUser(User user) {
+
+    }
+
+    @Override
+    public void updateUser(User user) {
+
+    }
+
+    @Override
+    public Optional<User> getUserById(Long id) {
+        return Optional.empty();
+    }
+
+    @Override
+    public List<User> getAllUsersByType(UserType type) {
+        return null;
+    }
+
+    @Override
+    public void addCar(Car car) {
         Connection connection = null;
         try {
             connection = getConnection();
@@ -29,7 +55,7 @@ public class MSDatabaseImpl extends JDBCRepository implements Database {
                 car.setId(rs.getLong(1));
             }
         } catch (SQLException e) {
-            System.out.println("Exception while execute ProductDAOImpl.save()");
+            System.out.println("Exception while execute MSDatabaseImpl.save()");
             e.printStackTrace();
             throw new RuntimeException(e);
         } finally {
@@ -38,17 +64,62 @@ public class MSDatabaseImpl extends JDBCRepository implements Database {
     }
 
     @Override
-    public Optional<Product> getByTitle(String title) {
+    public void removeCar(Car car) {
+
+    }
+
+    @Override
+    public void updateCar(Car car) {
+
+    }
+
+    @Override
+    public List<Car> getAllCars() {
+        return null;
+    }
+
+    @Override
+    public Optional<Car> getCarById(Long id) {
         return Optional.empty();
     }
 
     @Override
-    public boolean remove(Product product) {
-        return false;
+    public List<Car> getFreeCarsForDate(Date date) {
+        return null;
     }
 
     @Override
-    public List<Product> getAllProducts() {
+    public void addRent(Rent rent) {
+
+    }
+
+    @Override
+    public void updateRentStatus(long rentId, CarStatus status) {
+
+    }
+
+    @Override
+    public List<Rent> getAllRents() {
+        return null;
+    }
+
+    @Override
+    public List<Rent> getRentsForCar(Long carId) {
+        return null;
+    }
+
+    @Override
+    public List<Rent> getCurrentClientRents(Long clientId) {
+        return null;
+    }
+
+    @Override
+    public List<Rent> getCurrentOperatorRents(Long operatorId) {
+        return null;
+    }
+
+    @Override
+    public List<Rent> getRentWithStatus(CarStatus status) {
         return null;
     }
 }

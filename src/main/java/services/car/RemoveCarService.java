@@ -1,11 +1,12 @@
 package services.car;
 
+import database.Database;
 import domain.Car;
 
 public class RemoveCarService {
-    private InMemoryDatabase database;
+    private Database database;
 
-    public RemoveCarService (InMemoryDatabase database){
+    public RemoveCarService (Database database){
         this.database = database;
     }
 

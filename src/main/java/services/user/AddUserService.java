@@ -1,11 +1,12 @@
 package services.user;
 
+import database.Database;
 import domain.User;
 
 public class AddUserService {
-    private InMemoryDatabase database;
+    private Database database;
 
-    public AddUserService (InMemoryDatabase database){
+    public AddUserService (Database database){
         this.database = database;
     }
 
